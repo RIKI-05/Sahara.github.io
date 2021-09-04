@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="rishika.css" />
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Sign in & Sign up Form</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+
+
+
+        <a class="active" href="home.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="articles1.html">Articles</a>
+        <a href="charity.html">Donate</a>
+        <a href="signup.html" style="float:right;">Signup/Login</a>
+
+        <div class="logo" style="margin-bottom: 10px;">
+            <img src="img/logo.png" alt="" style="max-width:68px; margin-left:320px ; padding-bottom: 10px;">
+        </div>
+
+        <!-- <a href="signup.html" style="float:right;">Signup/Login</a> -->
+
+    </div>
+
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup">
+                <form action="signup.html" method="POST" class="sign-in-form">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" id="Password" />
+                    </div>
+                    <input type="submit" value="Login" class="btn solid" id="myButton" />
+                    <script>
+                        function validate() {
+                            var Username = document.getElementById("Username").value;
+                            var Password = document.getElementById("Password").value;
+
+                            if (Username == "admin" && Password == "1234") {
+                                document.getElementById("myButton").onclick = function() {
+                                    location.href = "index.html";
+                                }
+                            }
+
+                        }
+                    </script>
+                    <p class="social-text">Or Sign in with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+                <form action="#" class="sign-up-form">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="Email" />
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password" />
+                    </div>
+                    <input type="submit" class="btn" value="Sign up" />
+                    <p class="social-text">Or Sign up with social platforms</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-google"></i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>New here ?</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, ex ratione. Aliquid!
+                    </p>
+                    <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+                </div>
+                <img src="img/wishes (2).svg" class="image" alt="" />
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>One of us ?</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laboriosam ad deleniti.
+                    </p>
+                    <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+                </div>
+                <img src="img/Country (2).svg" class="image" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="fc" style="width:40%; margin-left:35%">
+            <div class="icons" style="margin-left: 100px;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <div class="texts" style="margin-left: 5px;">
+            <p style="text-align: center;">
+                |
+                <a href="home.html" style="color:white; font-weight:bold"> Home </a> |
+                <a href="about.html" style="color:white; font-weight:bold"> About Us </a> |
+                <a href="volunteer.html" style="color:white; font-weight:bold"> Volunteer </a> |
+                <a href="charity.html" style="color:white; font-weight:bold"> Donate </a> |
+                <a href="consultant.html" style="color:white; font-weight:bold"> Consultant </a> |
+                <a href="BenefitsOfTherapy.html" style="color:white; font-weight:bold"> Benefits Of Therapy </a> |
+                <br>|
+                <a href="signup.html" style="color:white; font-weight:bold"> signUp/signIn </a> |
+                <a href="articles1.html" style="color:white; font-weight:bold"> Articles </a> |
+
+                <br>
+                <br>
+                <h6 style="color:white; margin-left: 42%;">Copyright &copy; 2021 Sahara.All Rights Reserved</h6>
+            </p>
+
+
+        </div>
+
+    </footer>
+    <script src="apps.js"></script>
+</body>
+
+</html>

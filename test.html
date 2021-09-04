@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anxiety Test</title>
+    <!-- bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- bootstrap4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <script type="text/javaScript" src="test.js"></script>
+
+</head>
+
+<body style=" background-color: rgb(206, 241, 241);  ">
+
+
+    <div id="navbar">
+
+        <a class="active" href="home.html">Home</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="articles1.html">Articles</a>
+        <a href="charity.html">Donate</a>
+
+        <a href="signup.html" style="float:right;">Signup/Login</a>
+
+    </div>
+    <!-- Optional: some overlay text to describe the video -->
+    <!-- <div class="content">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p>
+    </div> -->
+
+    <!-- jumbotron 2 -->
+    <br>
+    <div class="jumbotron jumbotron-fluid" id="j2">
+        <div class=" container">
+            <h1 class="display-4 text-center" style="opacity:100%; font-weight: bold;">
+                Anxiety Test (Self-Assessment)</h1>
+        </div>
+    </div>
+
+    <!-- form  -->
+    <div id="form">
+        <form id="align" name="quiz" id="quiz">
+            <p>Do you have trouble controlling your worries?</p>
+            <input type="radio" id="Never" name="A" value="Never">
+            <label for="Never">Never</label><br>
+            <input type="radio" id="Sometimes" name="A" value="Sometimes">
+            <label for="Sometimes">Sometimes</label><br>
+            <input type="radio" id="Often" name="A" value="Often">
+            <label for="Often">Often</label>
+
+            <br>
+            <br>
+            <p>Do you get irritable and/or easily annoyed when anxious?</p>
+            <input type="radio" id="Never2" name="B" value="Never2">
+            <label for="Never2">Never</label><br>
+            <input type="radio" id="Sometimes2" name="B" value="Sometimes2">
+            <label for="Sometimes2">Sometimes</label><br>
+            <input type="radio" id="Often2" name="B" value="Often2">
+            <label for="Often2">Often</label>
+
+
+            <br>
+            <br>
+            <p>Does worry or anxiety make you feel fatigued or worn out?</p>
+            <input type="radio" id="Never3" name="C" value="Never3">
+            <label for="Never3">Never</label><br>
+            <input type="radio" id="Sometimes3" name="C" value="Sometimes3">
+            <label for="Sometimes3">Sometimes</label><br>
+            <input type="radio" id="Often3" name="C" value="Often3">
+            <label for="Often3">Often</label>
+
+
+            <br>
+            <br>
+            <p>Does worry or anxiety interfere with falling and/or staying asleep?</p>
+            <input type="radio" id="Never4" name="D" value="Never4">
+            <label for="Neve4">Never</label><br>
+            <input type="radio" id="Sometimes4" name="D" value="Sometimes4">
+            <label for="Sometimes4">Sometimes</label><br>
+            <input type="radio" id="Often4" name="D" value="Often4">
+            <label for="Often4">Often</label>
+
+
+            <br>
+            <br>
+            <p>Does worry or anxiety make it hard to concentrate?</p>
+            <input type="radio" id="Never5" name="E" value="Never5">
+            <label for="Never5">Never</label><br>
+            <input type="radio" id="Sometimes5" name="E" value="Sometimes5">
+            <label for="Sometimes5">Sometimes</label><br>
+            <input type="radio" id="Often5" name="E" value="Often5">
+            <label for="Often5">Often</label>
+            <br>
+            <input class="btn2" type="button" value="Submit" onclick="check()">
+            <br><br>
+            <!-- Button trigger modal -->
+            <button type="button" class=" learnmore" data-toggle="modal" data-target="#staticBackdrop">
+                Learn More About Anxiety
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade " id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #189AB4 ;">
+                            <h5 class="modal-title" id="staticBackdropLabel" style="color: white; font-weight: bold; margin-left: 10rem; font-size: 30px;">
+                                Anxiety</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body ">
+                            <p>Who hasn’t occasionally tossed and turned worrying about the what-ifs in life—job security, health concerns, money woes, or relationship issues? Angst is a natural response to life’s ups, downs, twists, and turns.
+                                <br> “A certain amount of worry and hyper-vigilance can be considered normal and healthy reactions to life circumstances or immediate threats,” explains Marni Goldberg, LMFT, LPCC, whose San Diego, California-based practice,
+                                Mindful Matters Counseling, specializes in anxiety, sensitivity, and life transitions.
+                            </p>
+                            <br>
+                            <p>The Diagnostic and Statistical Manual of Mental Disorders (DSM-5) characterizes GAD using the following criteria:</p>
+                            <ul>
+                                <li>Excessive anxiety and worry (apprehensive expectation), occurring more days than not for at least six months, about a number of events or activities (such as work or school performance)</li>
+                                <li>Difficulty controlling the worry</li>
+                                <li>The anxiety, worry, or physical symptoms cause clinically significant distress or impairment in social, occupational, or other important areas of functioning.
+                                </li>
+                                <li>The disturbance is not attributable to the physiological effects of a substance
+                                </li>
+                                <li>The disturbance is not better explained by another medical disorder.</li>
+
+                            </ul>
+                            <br>
+                            <p>Signs and Symptoms of Anxiety</p>
+                            <ul>
+                                <li>Perpetual state of constant worry</li>
+                                <li>Inability to relax or enjoy quiet time</li>
+                                <li>Feeling tense all the time</li>
+                                <li>Muscle tightness or body aches</li>
+                                <li>Avoidance of stressful situations</li>
+                                <li>Inability to tolerate uncertainty
+                                </li>
+
+                            </ul>
+
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn buttonfooter " data-dismiss="modal">Understood</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+    <footer>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <div class="fc" style="width:40%; margin-left:35%">
+            <div class="icons" style="margin-left: 100px;">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+        </div>
+        <div class="texts" style="margin-left: 5px;">
+            <p style="text-align: center;">
+                |
+                <a href="home.html" style="color:white; font-weight:bold"> Home </a> |
+                <a href="about.html" style="color:white; font-weight:bold"> About Us </a> |
+                <a href="volunteer.html" style="color:white; font-weight:bold"> Volunteer </a> |
+                <a href="charity.html" style="color:white; font-weight:bold"> Donate </a> |
+                <a href="consultant.html" style="color:white; font-weight:bold"> Consultant </a> |
+                <a href="BenefitsOfTherapy.html" style="color:white; font-weight:bold"> Benefits Of Therapy </a> |
+                <br>|
+                <a href="signup.html" style="color:white; font-weight:bold"> signUp/signIn </a> |
+                <a href="articles1.html" style="color:white; font-weight:bold"> Articles </a> |
+
+                <br>
+                <br>
+                <h6 style="color:white; margin-left: 42%;">Copyright &copy; 2021 Sahara.All Rights Reserved</h6>
+            </p>
+
+
+        </div>
+
+    </footer>
+
+    <!-- bootstrap links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+
+</html>

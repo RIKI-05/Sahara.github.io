@@ -1,0 +1,146 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+/* Add some content at the bottom of the video/page */
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* Style the button used to pause/play the video */
+
+body {
+    background-color: rgb(206, 241, 241);
+}
+
+#j2 {
+    background-size: cover;
+    max-height: 10rem;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: hsl(46, 86%, 50%);
+    opacity: 100%;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* form  */
+
+#form {
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 30px;
+    border: solid hsl(46, 86%, 50%) 7px;
+    background: white;
+    border-radius: 30px;
+}
+
+#align {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.btn2 {
+    /* cursor: pointer; */
+    padding: 5px 15px;
+    background-color: white;
+    color: hsl(46, 86%, 50%);
+    font-weight: bold;
+    border: 2px solid hsl(46, 86%, 50%);
+    border-radius: 30px;
+    font-size: 17px;
+    margin-left: 400px;
+    transition-duration: 0.4s;
+}
+
+.btn2:hover {
+    background-color: hsl(46, 86%, 50%);
+    color: white;
+}
+
+
+/* modal  */
+
+.buttonfooter {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: #189AB4;
+    border: 2px solid #189AB4;
+}
+
+.buttonfooter:hover {
+    background-color: #189AB4;
+    color: white;
+}
+
+.learnmore {
+    transition-duration: 0.4s;
+    background-color: white;
+    color: #189AB4;
+    border: 2px solid #189AB4;
+    border-radius: 10%;
+    margin-left: 600px;
+}
+
+.learnmore:hover {
+    background-color: #189AB4;
+    color: white;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #189AB4;
+    height: 85px;
+    padding: 10px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: hsl(46, 86%, 50%);
+    border-radius: 10px;
+}
+
+#navbar a.active {
+    background-color: hsl(46, 86%, 50%);
+    color: white;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}

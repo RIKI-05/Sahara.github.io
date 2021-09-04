@@ -1,0 +1,247 @@
+#navbar {
+    overflow: hidden;
+    background-color: #189AB4;
+    height: 85px;
+    padding: 10px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: hsl(46, 86%, 50%);
+    border-radius: 10px;
+}
+
+#navbar a.active {
+    background-color: hsl(46, 86%, 50%);
+    color: white;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+
+/* footer  */
+
+footer {
+    margin-top: 30px;
+    /* text-align: right; */
+    padding: 3px;
+    background-color: hsl(46, 86%, 50%);
+    /* background-color: #e3c622; */
+    color: white;
+}
+
+
+/* .col {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.conatiner2 {
+    margin: 0 -5px;
+} */
+
+
+/* footer  */
+
+.con {
+    position: relative;
+    bottom: 0;
+    color: whitesmoke;
+    width: 100%;
+    /* padding: 20px; */
+}
+
+.col {
+    float: left;
+    width: 25%;
+    text-align: center;
+    /* padding: 10px; */
+    height: 100px;
+    /* margin-top: 5%; */
+}
+
+.colr {
+    float: left;
+    width: 25%;
+    text-align: center;
+    /* padding: 10px; */
+    height: 100px;
+    /* margin-top: 5%; */
+}
+
+.ro:after {
+    text-align: center;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    /* background-color: #5BD9DB; */
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: hsl(46, 86%, 50%);
+    ;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #5BD9DB;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #5BD9DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #5BD9DB;
+}
+
+
+/* Style the container/contact section */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+
+/* Create two columns that float next to eachother */
+
+.column1 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

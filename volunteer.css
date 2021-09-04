@@ -1,0 +1,115 @@
+#j1 {
+    background-size: cover;
+    max-height: 10rem;
+    padding-top: 3%;
+    background-color: hsl(46, 86%, 50%);
+    opacity: 70%;
+}
+
+#j2 {
+    background-size: cover;
+    max-height: 10rem;
+    padding-top: 3%;
+    background-color: #189AB4;
+    opacity: 70%;
+    margin-bottom: 10px;
+}
+
+font {
+    font-family: 'Allison', cursive;
+}
+
+.heading {
+    color: black;
+    text-align: center;
+}
+
+.form-center {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.btn {
+    background-color: #2FCED0;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 1rem;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #189AB4;
+    height: 85px;
+    padding: 10px;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: hsl(46, 86%, 50%);
+    border-radius: 10px;
+}
+
+#navbar a.active {
+    background-color: hsl(46, 86%, 50%);
+    color: white;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.card {
+    border-color: white;
+}
+
+
+/*.image{
+  background-image: url('images/vol.jpg');
+   background-repeat:no-repeat;
+    background-size: 100% 100%;
+    margin-bottom:20px;
+    height: 200px;
+ width: 100%;
+}*/
+
+.back {
+    background-image: url('img/vol1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 20px;
+}
+
+.cards-use {
+    padding: 45px;
+    margin-bottom: 10px;
+}
+
+.down {
+    background-color: #D3D3D3;
+}
