@@ -15,29 +15,35 @@
 
     <link rel="stylesheet" type="text/css" href="test.css">
     <link rel="stylesheet" href="footer.css">
+     <link rel="stylesheet" href="header.css">
 
 </head>
 
 <body style=" background-image: url(''); background-position:cover ;background-repeat:no-repeat;background-size: 120rem;  ">
 
 
-    <div id="navbar">
+   <div class="topnav">
+        <!-- style="max-width:68px; margin-left:50% ; padding-bottom: 10px;"  -->
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a onMouseOver="this.style.backgroundColor='none'" href="home.html"><img src="img/logo.png" style="width:70px" alt=""></a>
 
+        </div>
 
-
-        <a class="active" href="home.html">Home</a>
+        <!-- Left-aligned links (default) -->
+        <a href="home.html">Home</a>
         <a href="volunteer.html">Volunteer</a>
         <a href="articles1.html">Articles</a>
         <a href="charity.html">Donate</a>
-        <a href="signup.html" style="float:right;">Signup/Login</a>
 
-        <div class="logo" style="margin-bottom: 10px;">
-            <img src="img/logo.png" alt="" style="max-width:68px; margin-left:320px ; padding-bottom: 10px;">
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="signup.html">Signup/Login</a>
         </div>
 
-        <!-- <a href="signup.html" style="float:right;">Signup/Login</a> -->
-
     </div>
+
     <!--
     <video autoplay muted loop id=" myVideo">
     <source src="Sky.mp4" type="video/mp4">
