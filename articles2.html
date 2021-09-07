@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
 
     <link rel="stylesheet" type="text/css" href="articles1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +24,28 @@
 <body>
 
     <!--navbar-->
-    <div id="navbar">
+    <div class="topnav">
+        <!-- style="max-width:68px; margin-left:50% ; padding-bottom: 10px;"  -->
+        <!-- Centered link -->
+        <div class="topnav-centered">
+            <a onMouseOver="this.style.backgroundColor='none'" href="home.html"><img src="img/logo.png" style="width:70px" alt=""></a>
 
+        </div>
 
-
-        <a href="home.html">Home</a>
+        <!-- Left-aligned links (default) -->
+        <a  href="home.html">Home</a>
         <a href="volunteer.html">Volunteer</a>
         <a class="active" href="articles1.html">Articles</a>
         <a href="charity.html">Donate</a>
-        <a href="signup.html" style="float:right;">Signup/Login</a>
 
-        <div class="logo" style="margin-bottom: 10px;">
-            <img src="img/logo.png" alt="" style="max-width:68px; margin-left:320px ; padding-bottom: 10px;">
+
+        <!-- Right-aligned links -->
+        <div class="topnav-right">
+            <a href="signup.html">Signup/Login</a>
         </div>
 
-        <!-- <a href="signup.html" style="float:right;">Signup/Login</a> -->
-
     </div>
+
 
     <!-- jumbotron 2 -->
 
